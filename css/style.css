@@ -1,0 +1,892 @@
+:root {
+    --bg-col-1: #04041A;
+    --bg-col-2: #001838;
+    --bg-col-3: #070714;
+    --bg-col-4: #9D9D9D;
+    --bg-col-5: #022450;
+    --bg-col-6: #221F33;
+    /* --bg-col-2: #343a40; */
+    --text-col-1: #5EC8E5;
+    --text-col-2: #939393;
+    --text-col-3: #818d9c;
+    --text-col-4: #2f3545;
+    --text-col-5: #001235;
+    --bor-col: #e7e7e7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html,
+body {
+    background: url(../images/background-overlay.png) no-repeat center / cover;
+    background-color: var(--bg-col-1);
+}
+
+.brand-text-col {
+    color: var(--text-col-1);
+}
+
+.font-d-reg {
+    font-family: "dub-reg";
+    font-weight: 400;
+}
+
+.font-d-bld {
+    font-family: "dub-bold";
+    font-weight: 700;
+}
+
+
+/*=====================
+     Common css ends 
+  ==================*/
+
+/*=====================
+   Import Font Css Start
+  ==================*/
+
+@font-face {
+    font-family: "dub-bold";
+    src: url(../fonts/Dubai-Bold.ttf);
+}
+
+@font-face {
+    font-family: "dub-reg";
+    src: url(../fonts/Dubai-Regular.ttf);
+}
+
+
+
+/*====================
+  Import Font Css Ends
+  ==================*/
+
+
+/*====================
+   Home Page Starts
+  ==================*/
+
+
+
+/* Navbar Starts */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    background: var(--bg-col-6);
+}
+
+
+.header .small-menu-btn {
+    background: var(--text-col-1);
+    color: #fff;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.header .menu-right .menu-list {
+    position: relative;
+}
+
+.header .menu-right .menu-list::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background: #fff;
+    width: 3px;
+    height: 30px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
+.header .menu-right .menu-list ul li {
+    margin-right: 20px;
+}
+
+.header .menu-right .menu-list ul li a {
+    font-size: 26px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.header .menu-right .menu-list ul li a:hover,
+.header .menu-right .social-icon ul li a:hover {
+    color: var(--text-col-1) !important;
+}
+
+.header .menu-right .social-icon ul li {
+    margin-left: 15px;
+}
+
+.header .menu-right .social-icon ul li a {
+    font-size: 25px;
+    color: #fff;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+/* Offcanvas Start */
+
+.offcanvas {
+    background: var(--bg-col-6);
+}
+
+
+.offcanvas-header .btn-close {
+    background: transparent;
+    width: auto;
+    height: auto;
+}
+
+.offcanvas-header .btn-close .fa-xmark {
+    font-size: 26px;
+    color: #fff;
+}
+
+.offcanvas .offcanvas-body .menu-list {
+    padding-top: 20px;
+}
+
+.offcanvas .offcanvas-body .menu-list ul li {
+    margin-bottom: 10px;
+}
+
+.offcanvas .offcanvas-body .menu-list ul li a {
+    font-size: 26px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.offcanvas .offcanvas-body .menu-list ul li a:hover {
+    color: var(--text-col-1) !important;
+}
+
+.offcanvas .offcanvas-body .social-icon {
+    border-top: 2px solid var(--text-col-1);
+    padding-top: 10px;
+}
+
+.offcanvas .offcanvas-body .social-icon ul li {
+    margin-right: 20px;
+}
+
+.offcanvas .offcanvas-body .social-icon ul li a {
+    font-size: 26px;
+    color: #fff;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.offcanvas .offcanvas-body .social-icon ul li a:hover {
+    color: var(--text-col-1) !important;
+}
+
+/* Offcanvas Ends */
+
+
+/* Navbar Ends */
+
+
+/* Hero Section Starts */
+
+#hero {
+    padding-top: 270px;
+}
+
+#hero .hero-heading {
+    margin-bottom: 60px;
+}
+
+#hero .hero-heading h1 {
+    font-size: 48px;
+    color: var(--text-col-1);
+    margin-bottom: 7px !important;
+}
+
+#hero .hero-heading h1 span {
+    color: #fff;
+    text-shadow: 0px 0px 5px var(--text-col-1);
+}
+
+#hero .hero-heading p {
+    font-size: 26px;
+}
+
+#hero .hero-list {
+    padding-bottom: 70px;
+}
+
+#hero .hero-list .hero-list-slider {
+    padding: 10px 0;
+    background: var(--bg-col-2);
+    border: 2px solid var(--text-col-1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#hero .hero-list ul li {
+    padding: 0 14px;
+    border-right: 1px solid var(--text-col-1);
+    text-align: center;
+}
+
+#hero .hero-list ul li span {
+    font-size: 20px;
+}
+
+#hero .hero-list ul li:last-child {
+    border-right: 0;
+}
+
+#hero .hero-list ul li span.text-active {
+    color: var(--text-col-1) !important;
+}
+
+/* Hero Section Ends */
+
+/* Bonus Hunt Section Starts */
+
+#bonus-hunt {
+    margin-bottom: 50px;
+}
+
+#bonus-hunt .bounus-hunt-heading {
+    margin-bottom: 65px;
+}
+
+#bonus-hunt .bounus-hunt-heading .bonus-hunt-tittle h3 {
+    font-size: 48px;
+}
+
+#bonus-hunt .bounus-hunt-heading .bonus-hunt-btn a {
+    font-size: 24px;
+    display: inline-block;
+    background: var(--bg-col-2);
+    line-height: 50px;
+    border: 2px solid var(--text-col-1);
+    border-radius: 8px;
+    padding: 0 25px;
+}
+
+#bonus-hunt .bonus-hunt-statement {
+    background: var(--bg-col-2);
+    border: 2px solid var(--text-col-1);
+    border-radius: 8px;
+    padding: 18px 0;
+    margin-bottom: 50px;
+}
+
+#bonus-hunt .bonus-hunt-statement .statement-item {
+    background: var(--bg-col-2);
+    border: 2px solid var(--text-col-1);
+    border-radius: 8px;
+    padding: 5px 7px;
+    margin: 0 15px;
+}
+
+#bonus-hunt .bonus-hunt-statement .statement-item h4 {
+    font-size: 24px;
+}
+
+#bonus-hunt .bonus-hunt-statement .statement-item p {
+    font-size: 17px;
+    color: var(--text-col-2);
+}
+
+#bonus-hunt .bounus-hunt-list .table-list {
+    overflow: hidden;
+}
+
+#bonus-hunt .bounus-hunt-list .list-table {
+    border: 2px solid var(--text-col-1);
+    border-radius: 30px;
+}
+
+#bonus-hunt .bounus-hunt-list .list-table .table-header {
+    background: var(--bg-col-5);
+    padding: 22px 30px;
+    border-radius: 30px 30px 0 0;
+}
+
+#bonus-hunt .bounus-hunt-list .list-table h4 {
+    font-size: 22px;
+}
+
+#bonus-hunt .bounus-hunt-list .table-list .list-item {
+    padding: 22px 30px;
+}
+
+#bonus-hunt .bounus-hunt-list .table-list .list-item:nth-child(odd) {
+    background: var(--bg-col-2);
+}
+
+#bonus-hunt .bounus-hunt-list .table-list .list-item:nth-child(even) {
+    background: var(--bg-col-5);
+}
+
+#bonus-hunt .bounus-hunt-list .table-pagination-btn {
+    background: var(--bg-col-2);
+    padding: 22px 30px;
+    border-radius: 0 0 30px 30px;
+}
+
+#bonus-hunt .bounus-hunt-list .table-pagination-btn a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    border: 2px solid var(--text-col-1);
+    background: var(--bg-col-5);
+    border-radius: 8px;
+}
+
+#bonus-hunt .bounus-hunt-list .table-pagination-btn .pagination-number ul li {
+    margin-right: 10px;
+}
+
+#bonus-hunt .bounus-hunt-list .table-pagination-btn .pagination-number ul li:last-child {
+    margin-right: 0;
+}
+
+#bonus-hunt .bounus-hunt-list .guess-balance {
+    padding: 30px;
+    background: var(--bg-col-2);
+    border-radius: 20px;
+    border: 2px solid var(--text-col-1);
+}
+
+#bonus-hunt .bounus-hunt-list .guess-balance h3 {
+    font-size: 27px;
+    margin-bottom: 35px !important;
+}
+
+#bonus-hunt .bounus-hunt-list .guess-end-balance {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--text-col-1);
+}
+
+#bonus-hunt .bounus-hunt-list .guess-balance .guess-end-balance .your-guess,
+#bonus-hunt .bounus-hunt-list .guess-balance .guess-end-balance .end-balance {
+    background: var(--bg-col-5);
+    border: 2px solid var(--text-col-1);
+    padding: 5px 6px;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+#bonus-hunt .bounus-hunt-list .guess-balance p {
+    font-size: 18px;
+    color: var(--text-col-2);
+}
+
+#bonus-hunt .bounus-hunt-list .guess-balance h4 {
+    font-size: 26px;
+}
+
+#bonus-hunt .bounus-hunt-list .winner-name {
+    margin-top: 20px;
+}
+
+#bonus-hunt .bounus-hunt-list .winner-name .winner {
+    padding: 5px 6px;
+    background: var(--bg-col-5);
+    border: 2px solid var(--text-col-1);
+    border-radius: 8px;
+}
+
+#bonus-hunt .bounus-hunt-list .winner-name p {
+    font-size: 22px;
+    color: var(--text-col-2);
+}
+
+#bonus-hunt .bounus-hunt-list .winner-name h4 {
+    font-size: 33px;
+
+}
+
+#bonus-hunt .bounus-hunt-list .win-multiplier .highest-win {
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--text-col-1);
+}
+
+#bonus-hunt .bounus-hunt-list .win-multiplier .highest-multiplier {
+    padding-bottom: 30px;
+}
+
+#bonus-hunt .bounus-hunt-list .win-multiplier {
+    background: var(--bg-col-2);
+    border: 2px solid var(--text-col-1);
+    border-radius: 20px;
+    padding: 0 30px;
+    margin-top: 30px;
+}
+
+#bonus-hunt .bounus-hunt-list .win-multiplier h3 {
+    font-size: 27px;
+    margin-bottom: 20px !important;
+    padding-top: 30px;
+}
+
+#bonus-hunt .bounus-hunt-list .win-multiplier h4 {
+    font-size: 26px;
+}
+
+#bonus-hunt .bounus-hunt-list .win-multiplier p {
+    font-size: 18px;
+    color: var(--text-col-2);
+}
+
+
+/* Bonus Hunt Section eNDS */
+
+/* Footer Section Starts */
+
+#footer {
+    background: var(--bg-col-3);
+    padding: 20px 0;
+    border-top: 2px solid var(--bg-col-4);
+    margin-top: 60px;
+}
+
+#footer .footer-text h4 {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px !important;
+}
+
+#footer .footer-text p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Footer Section Ends */
+
+
+/* ========================
+ Home Page Ends
+========================= */
+
+/* ========================
+ Leaderboard Page Starts 
+========================= */
+
+/* Leaderboard Banner Starts */
+
+
+.leaderboard-banner {
+    padding-top: 250px;
+    padding-bottom: 70px;
+}
+
+.leaderboard-banner .container {
+    overflow: hidden;
+}
+
+.leaderboard-banner .leaderboard-banner-heading-text {
+    padding-bottom: 160px;
+}
+
+.leaderboard-banner .leaderboard-banner-heading-text h1 {
+    font-size: 48px;
+    color: var(--text-col-1);
+    margin-bottom: 10px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-heading-text h1 span {
+    text-shadow: 0px 0px 5px var(--text-col-1);
+}
+
+.leaderboard-banner .leaderboard-banner-heading-text p {
+    font-size: 30px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item {
+    background: var(--bg-col-2);
+    border: 2px solid var(--text-col-1);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item .box-number span {
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    background: var(--text-col-1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--text-col-5);
+    -webkit-text-fill-color: #fff;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item .box-tittle {
+    border-bottom: 1px solid var(--text-col-1);
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item .box-tittle p,
+.leaderboard-banner .leaderboard-banner-box .box-item .box-prize h5 {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item .box-prize p {
+    color: var(--text-col-1);
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.one {
+    margin-right: -40px;
+    margin-left: 40px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.three {
+    margin-right: 40px;
+    margin-left: -40px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.one .box-number {
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.one .box-tittle {
+    margin: 0 40px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.one .box-tittle h3 {
+    font-size: 21px;
+    margin-bottom: 20px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.one .box-tittle p,
+.leaderboard-banner .leaderboard-banner-box .box-item.one .box-prize p {
+    font-size: 20px;
+    margin-bottom: 20px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.one .box-prize h5 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+    margin-bottom: 5px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.two {
+    padding-bottom: 25px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.two .box-number {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.two .box-tittle {
+    margin: 0 25px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.two .box-tittle h3 {
+    font-size: 24px;
+    margin-bottom: 20px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.two .box-tittle p,
+.leaderboard-banner .leaderboard-banner-box .box-item.two .box-prize p {
+    font-size: 24px;
+    margin-bottom: 25px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.two .box-prize h5 {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 15px;
+    margin-bottom: 10px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.three .box-number {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.three .box-tittle {
+    margin: 0 50px;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.three .box-tittle h3 {
+    font-size: 18px;
+    margin-bottom: 20px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.three .box-tittle p,
+.leaderboard-banner .leaderboard-banner-box .box-item.three .box-prize p {
+    font-size: 18px;
+    margin-bottom: 18px !important;
+}
+
+.leaderboard-banner .leaderboard-banner-box .box-item.three .box-prize h5 {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+    margin-bottom: 5px !important;
+}
+
+/* Leaderboard Banner Ends */
+
+/* Leaderboard List Starts */
+
+.leaderboard-list {
+    padding-bottom: 50px;
+}
+
+.leaderboard-list .list-header {
+    padding: 0 30px;
+}
+
+.leaderboard-list .list-header span {
+    font-size: 14px;
+    color: #fff;
+}
+
+.leaderboard-list .list-table {}
+
+.leaderboard-list .list-table .list-item {
+    background: var(--bg-col-2);
+    padding: 20px 30px;
+    border: 1px solid var(--text-col-1);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.leaderboard-list .list-table h4 {
+    font-size: 18px;
+}
+
+.leaderboard-list .list-table .list-number {
+    top: 50%;
+    left: -17.5px;
+    transform: translateY(-50%);
+}
+
+.leaderboard-list .list-table .list-number span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    background: var(--text-col-1);
+    line-height: 35px;
+    font-size: 18px;
+    border-radius: 50%;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--text-col-5);
+    -webkit-text-fill-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+
+}
+
+.leaderboard-list .list-table .list-username {}
+
+.leaderboard-list .list-table .list-username h4 {}
+
+.leaderboard-list .list-table .list-rank {}
+
+.leaderboard-list .list-table .list-rank h4 {}
+
+.leaderboard-list .list-table .list-wagred {}
+
+.leaderboard-list .list-table .list-wagred h4 {}
+
+.leaderboard-list .list-table .list-prize {}
+
+.leaderboard-list .list-table .list-prize h4 {
+    color: var(--text-col-1);
+}
+
+/* Leaderboard List Ends */
+
+/* ========================
+ Leaderboard Page Ends 
+========================= */
+
+/* ========================
+ Gamedom Page Starts 
+========================= */
+
+#gamedom-banner {
+    padding-top: 290px;
+    padding-bottom: 80px;
+}
+
+#gamedom-banner .gamedom-heading {
+    padding-bottom: 50px;
+}
+
+#gamedom-banner .gamedom-heading h1 {
+    font-size: 60px;
+    color: var(--text-col-1);
+}
+
+#gamedom-banner .gamedom-heading h1 span {
+    text-shadow: 0px 0px 5px var(--text-col-1);
+}
+
+#gamedom-banner .gamedom-heading p {
+    font-size: 32px;
+}
+
+
+#gamedom-reward-system {}
+
+#gamedom-reward-system h2 {
+    font-size: 38px;
+    margin-bottom: 40px !important;
+}
+
+#gamedom-reward-system .rewards-box {}
+
+#gamedom-reward-system .rewards-box .box-item {
+    margin-bottom: 60px;
+}
+
+#gamedom-reward-system .rewards-box .box-item .tittle-text {
+    border-bottom: 2px solid var(--text-col-1);
+}
+
+#gamedom-reward-system .rewards-box .box-item .tittle-text h3 {
+    font-size: 26px;
+    color: var(--text-col-1);
+    padding-bottom: 5px;
+}
+
+#gamedom-reward-system .rewards-box .box-item .content-text {
+    margin-top: 10px;
+}
+
+#gamedom-reward-system .rewards-box .box-item .content-text ul {}
+
+#gamedom-reward-system .rewards-box .box-item .content-text ul li:first-child {
+    margin-bottom: 10px;
+}
+
+#gamedom-reward-system .rewards-box .box-item .content-text ul li p {
+    font-size: 20px;
+}
+
+#gamedom-reward-system .rewards-box .box-item .play-btn {
+    margin-top: 15px;
+}
+
+#gamedom-reward-system .rewards-box .box-item .play-btn a {
+    background: var(--text-col-1);
+    display: inline-block;
+    font-size: 24px;
+    line-height: 45px;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+/* ========================
+ Gamedom Page Ends 
+========================= */
+
+/* ========================
+ Hypedrop Page Starts 
+========================= */
+
+#claim-rewards {}
+
+#claim-rewards h2 {
+    font-size: 38px;
+    margin-bottom: 40px !important;
+}
+
+#claim-rewards .claim-rewards-box {}
+
+#claim-rewards .claim-rewards-box .claim-rewards-item {}
+
+#claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle {
+    position: relative;
+}
+
+#claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    background: url(../images/claim-rewards-angle-1.png) no-repeat center / cover;
+    width: 50%;
+    height: 50%;
+    transform: translateY(-50%);
+}
+
+#claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -150px;
+    background: url(../images/claim-rewards-angle-2.png) no-repeat center / cover;
+    width: 50%;
+    height: 50%;
+    transform: translateY(-50%);
+}
+
+#claim-rewards .claim-rewards-box .claim-rewards-item img {}
+
+
+/* ========================
+ Hypedrop Page Ends 
+========================= */

@@ -1,0 +1,425 @@
+/* =======================
+  Common Media Css Starts
+======================= */
+
+@media (min-width: 992px) {}
+
+@media (max-width: 991px) {
+
+    #claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle::before,
+    #claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle::after {
+        display: none;
+    }
+}
+
+/* ====================
+  Common Media Css Ends
+=================== */
+
+/* ==========================
+   Extra Small Device Starts
+=========================== */
+
+@media only screen and (max-width: 575px) {
+
+    #offcanvasExample .offcanvas-title img,
+    .header .menu-left a img,
+    #footer .footer-logo img {
+        max-width: 200px;
+    }
+
+    #hero {
+        padding-top: 250px;
+    }
+
+    #hero .hero-heading h1 {
+        font-size: 30px;
+    }
+
+    #hero .hero-heading p,
+    #bonus-hunt .bonus-hunt-statement .statement-item h4,
+    #bonus-hunt .bounus-hunt-list .list-table h4,
+    #bonus-hunt .bounus-hunt-list .guess-balance h4,
+    #bonus-hunt .bounus-hunt-list .win-multiplier h4 {
+        font-size: 16px;
+    }
+
+    #bonus-hunt .bounus-hunt-heading .bonus-hunt-tittle h3 {
+        font-size: 24px;
+    }
+
+    #bonus-hunt .bounus-hunt-heading .bonus-hunt-btn a {
+        font-size: 14px;
+        line-height: 35px;
+        padding: 0 10px;
+        border-width: 1px;
+    }
+
+    #bonus-hunt .bounus-hunt-heading,
+    #bonus-hunt .bonus-hunt-statement,
+    #bonus-hunt {
+        margin-bottom: 40px;
+    }
+
+    #bonus-hunt .bonus-hunt-statement .statement-item p,
+    #bonus-hunt .bounus-hunt-list .guess-balance p,
+    #bonus-hunt .bounus-hunt-list .win-multiplier p,
+    #footer .footer-text p {
+        font-size: 14px;
+    }
+
+    #bonus-hunt .bounus-hunt-list .list-table .table-header,
+    #bonus-hunt .bounus-hunt-list .table-list .list-item,
+    #bonus-hunt .bounus-hunt-list .guess-balance {
+        padding: 20px 15px;
+    }
+
+    #bonus-hunt .bounus-hunt-list .win-multiplier {
+        padding: 0 15px;
+    }
+
+    #bonus-hunt .bounus-hunt-list .win-multiplier h3 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    #footer .footer-text h4 {
+        font-size: 20px;
+    }
+
+    #bonus-hunt .bounus-hunt-list .guess-balance h3 {
+        font-size: 20px;
+        margin-bottom: 25px !important;
+    }
+
+    #bonus-hunt .bounus-hunt-list .win-multiplier .highest-win,
+    #bonus-hunt .bounus-hunt-list .win-multiplier .highest-multiplier {
+        padding-bottom: 20px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.one {
+        margin: 30px 0;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.one,
+    .leaderboard-banner .leaderboard-banner-box .box-item.three {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text h1 {
+        font-size: 35px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text p {
+        font-size: 16px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text {
+        padding-bottom: 80px;
+    }
+
+    .leaderboard-list {
+        padding-bottom: 90px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.one .box-tittle h3,
+    .leaderboard-banner .leaderboard-banner-box .box-item.one .box-tittle p,
+    .leaderboard-banner .leaderboard-banner-box .box-item.one .box-prize p,
+    .leaderboard-banner .leaderboard-banner-box .box-item.one .box-prize h5 {
+        font-size: 19px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.two .box-tittle h3,
+    .leaderboard-banner .leaderboard-banner-box .box-item.two .box-tittle p,
+    .leaderboard-banner .leaderboard-banner-box .box-item.two .box-prize p,
+    .leaderboard-banner .leaderboard-banner-box .box-item.two .box-prize h5 {
+        font-size: 20px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.three .box-tittle h3,
+    .leaderboard-banner .leaderboard-banner-box .box-item.three .box-tittle p,
+    .leaderboard-banner .leaderboard-banner-box .box-item.three .box-prize p,
+    .leaderboard-banner .leaderboard-banner-box .box-item.three .box-prize h5 {
+        font-size: 18px;
+    }
+
+    .leaderboard-list .list-table .list-item {
+        padding: 15px;
+    }
+
+    .leaderboard-list .list-table .list-username,
+    .leaderboard-list .list-table .list-wagred {
+
+        margin-bottom: 5px;
+    }
+
+    .leaderboard-list .list-table .list-number {
+        top: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .leaderboard-list .list-table .list-item {
+        margin-bottom: 30px;
+    }
+
+    #gamedom-banner {
+        padding-top: 250px;
+        padding-bottom: 50px;
+    }
+
+    #gamedom-banner .gamedom-heading h1 {
+        font-size: 30px;
+        margin-bottom: 7px !important;
+    }
+
+    #gamedom-banner .gamedom-heading p {
+        font-size: 16px;
+    }
+
+    #gamedom-reward-system h2,
+    #claim-rewards h2 {
+        font-size: 18px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .tittle-text h3 {
+        font-size: 16px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .content-text ul li p {
+        font-size: 15px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .play-btn a {
+        font-size: 18px;
+        line-height: 37px;
+    }
+}
+
+/* ==========================
+   Extra Small Device Ends
+=========================== */
+
+/* =====================
+    Small Device Starts
+==================== */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    #hero .hero-heading h1 {
+        font-size: 40px;
+    }
+
+    #bonus-hunt .bounus-hunt-heading .bonus-hunt-tittle h3 {
+        font-size: 36px;
+    }
+
+    #hero .hero-heading p,
+    #bonus-hunt .bonus-hunt-statement .statement-item h4,
+    #bonus-hunt .bounus-hunt-list .list-table h4,
+    #bonus-hunt .bounus-hunt-list .guess-balance h4,
+    #bonus-hunt .bounus-hunt-list .win-multiplier h4 {
+        font-size: 20px;
+    }
+
+    #bonus-hunt .bounus-hunt-heading .bonus-hunt-btn a {
+        font-size: 20px;
+        line-height: 44px;
+        padding: 0 20px;
+    }
+
+    #bonus-hunt .bounus-hunt-heading {
+        margin-bottom: 50px;
+    }
+
+    #bonus-hunt .bounus-hunt-list .guess-balance h3,
+    #bonus-hunt .bounus-hunt-list .win-multiplier h3 {
+        font-size: 24px;
+    }
+
+    #bonus-hunt .bounus-hunt-list .guess-balance p,
+    #bonus-hunt .bounus-hunt-list .win-multiplier p {
+        font-size: 17px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text h1 {
+        font-size: 40px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.one {
+        margin: 30px 0;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.one,
+    .leaderboard-banner .leaderboard-banner-box .box-item.three {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text p {
+        font-size: 20px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text {
+        padding-bottom: 100px;
+    }
+
+    #gamedom-banner {
+        padding-bottom: 50px;
+    }
+
+    #gamedom-banner .gamedom-heading h1 {
+        font-size: 40px;
+        margin-bottom: 7px !important;
+    }
+
+    #gamedom-banner .gamedom-heading p {
+        font-size: 20px;
+    }
+
+    #gamedom-reward-system h2,
+    #claim-rewards h2 {
+        font-size: 30px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .tittle-text h3 {
+        font-size: 22px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .content-text ul li p {
+        font-size: 17px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .play-btn a {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
+
+/* ====================
+    Small Device Ends
+=================== */
+
+/* =====================
+    Medium Device Starts
+==================== */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    #hero .hero-heading h1,
+    #bonus-hunt .bounus-hunt-heading .bonus-hunt-tittle h3 {
+        font-size: 40px;
+    }
+
+    #hero .hero-heading p,
+    #bonus-hunt .bounus-hunt-list .guess-balance h3,
+    #bonus-hunt .bounus-hunt-list .guess-balance h4,
+    #bonus-hunt .bounus-hunt-list .win-multiplier h3,
+    #bonus-hunt .bounus-hunt-list .win-multiplier h4 {
+        font-size: 24px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text h1 {
+        font-size: 40px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.one .box-tittle h3 {
+        font-size: 19px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.two .box-tittle h3 {
+        font-size: 20px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-box .box-item.one .box-tittle p,
+    .leaderboard-banner .leaderboard-banner-box .box-item.one .box-prize p,
+    .leaderboard-banner .leaderboard-banner-box .box-item.one .box-prize h5,
+    .leaderboard-banner .leaderboard-banner-box .box-item.three .box-tittle h3 {
+        font-size: 18px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text p {
+        font-size: 24px;
+    }
+
+    .leaderboard-banner .leaderboard-banner-heading-text {
+        padding-bottom: 100px;
+    }
+
+    #gamedom-banner {
+        padding-bottom: 60px;
+    }
+
+    #gamedom-banner .gamedom-heading h1 {
+        font-size: 50px;
+    }
+
+    #gamedom-banner .gamedom-heading p {
+        font-size: 24px;
+    }
+
+    #gamedom-reward-system h2,
+    #claim-rewards h2 {
+        font-size: 32px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .tittle-text h3 {
+        font-size: 24px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .content-text ul li p {
+        font-size: 17px;
+    }
+
+    #gamedom-reward-system .rewards-box .box-item .play-btn a {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+
+}
+
+/* ====================
+    Medium Device Ends
+=================== */
+
+/* =====================
+    Large Device Starts
+==================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle::before {
+        left: -140px;
+        background: url(../images/claim-rewards-angle-1.png) no-repeat center / contain;
+    }
+
+    #claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle::after {
+        right: -115px;
+        background: url(../images/claim-rewards-angle-2.png) no-repeat center / contain;
+    }
+}
+
+/* ====================
+    Large Device Ends
+=================== */
+
+/* ==========================
+    Extra Large Device Starts
+========================= */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    #claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle::before {
+        left: -165px;
+        background: url(../images/claim-rewards-angle-1.png) no-repeat center / contain;
+    }
+
+    #claim-rewards .claim-rewards-box .claim-rewards-item.lr-angle::after {
+        right: -135px;
+        background: url(../images/claim-rewards-angle-2.png) no-repeat center / contain;
+    }
+}
+
+/* =========================
+    Extra Large Device Ends
+========================= */
